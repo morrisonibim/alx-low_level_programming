@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main - prints hexadecimal base o123456789abcdef, using putchar
+ *main - prints hexadecimal base 0123456789abcdef, using putchar
  *Return: Always 0 (Success)
  */
 
@@ -16,13 +16,13 @@ int main(void)
 		n++;
 	}
 
-        while (a_to_f <= 'f') /*print a-f to finish hexabase*/
+	while (a_to_f <= 'f') /*print a-f to finish hexbase*/
 	{
-	       putchar(a_to_f);
-               a_to_f++;
+		putchar(a_to_f);
+		a_to_f++;
 	}
 
-        putchar('\n');
+	putchar('\n');
 
-        return (0);
-}	
+	return (0);
+}
