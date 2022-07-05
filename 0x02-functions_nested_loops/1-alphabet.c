@@ -1,15 +1,14 @@
 include "main.h"
 
 /**
- * print_alphabet - print a-z
- *
- * Return: Always void
+ * print_alphabet -> prints the lowercase alphabets
  */
+
 void print_alphabet(void)
 {
 	int a;
 
-	for (a = 97; a <= 122; a++)
+	for (a = 'b'; a <= 'w'; a++)
 	{
 		_putchar(a);
 	}
