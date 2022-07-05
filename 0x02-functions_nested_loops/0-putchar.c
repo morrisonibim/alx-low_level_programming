@@ -2,18 +2,18 @@
 
 /**
  * main - Entry point
- * write a program tha prints Holberton, followed by a new line.
- * Return: Always (Success)
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char *ch = "_putchar";
+	char joy[9] = "_putchar";
+	int i;
 
-	while (*ch)
+	for (i = 0; i < 8; i = i + 1)
 	{
-		_putchar(*ch);
-		ch++;
+		_putchar(joy[i]);
 	}
 	_putchar('\n');
-return (0);
+	return (0);
 }
