@@ -1,4 +1,6 @@
-nclude "main.h"
+#include <stdio.h>
+#include <limits.h>
+#include "main.h"
 
 /**
  * _abs - absolute value of int
