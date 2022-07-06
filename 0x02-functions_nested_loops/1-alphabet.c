@@ -6,11 +6,11 @@ include "main.h"
 
 void print_alphabet(void)
 {
-	int a;
+	int j;
 
-	for (a = 'b'; a <= 'w'; a++)
+	for (j = 'a'; j <= 'z'; j++)
 	{
-		_putchar(a);
+		_putchar(j);
 	}
 	_putchar('\n');
 }
