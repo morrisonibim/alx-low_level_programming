@@ -1,17 +1,23 @@
 #include "main.h"
 
 /**
- * print_line - print lines
- * @n: line
+ * puts2 - print string from first char
+ * @str: string
  * Return: void
  */
-void print_line(int n)
+void puts2(char *str)
 {
-	int i;
+	int asdf = 0;
 
-	for (i = 0; i < n; i++)
+	while (asdf >= 0)
 	{
-		_putchar(95);
+		if (str[asdf] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		if (asdf % 2 == 0)
+			_putchar(str[asdf]);
+		asdf++;
 	}
-	_putchar('\n');
 }
