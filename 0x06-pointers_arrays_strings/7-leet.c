@@ -7,22 +7,22 @@
  */
 char *leet(char *s)
 {
-  int count = 0, i;
-  int low_case[] = {97, 101, 111, 116, 108};
-  int upper_case[] = {65, 69, 79, 84, 76};
-  int num[] = {52, 51, 48, 55, 49};
+	int count = 0, i;
+	int low_case[] = {97, 101, 111, 116, 108};
+	int upper_case[] = {65, 69, 79, 84, 76};
+	int num[] = {52, 51, 48, 55, 49};
 
-  while (*(s + count) != '\0')
-    {
-      for (i = 0; i < 5; i++)
+	while (*(s + count) != '\0')
 	{
-	  if (*(s + count) == low_case[i] || *(s + count) == upper_case[i])
-	    {
-	      *(s + count) = num[i];
-	      break;
-	    }
+		for (i = 0; i < 5; i++)
+		{
+			if (*(s + count) == low_case[i] || *(s + count) == upper_case[i])
+			{
+				*(s + count) = num[i];
+				break;
+			}
+		}
+		count++;
 	}
-      count++;
-    }
-  return (s);
+	return (s);
 }
